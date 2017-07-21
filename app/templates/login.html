@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}Bucketlist | Login{% endblock %}
+{% block body %}
+  <div class="container">
+    <h1><center>BucketList Login</center></h1>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    
+<form method="post" action="{{url_for('login_submit') }}">
+<div class="form-group row">
+  <label for="User Name" class="col-2 col-form-label">User Name</label>
+  <div class="col-10">
+    <input class="form-control" type="text" value="" id="username" name="username">
+  </div>
+</div>
+
+<div class="form-group row">
+  <label for="Password" class="col-2 col-form-label">Password</label>
+  <div class="col-10">
+    <input class="form-control" type="password"  id="password" name="password">
+  </div>
+</div>
+
+<div class="form-group row">
+  <div class="col-2"></div>
+  <div class="col-10">
+    <input class="form-control btn btn-primary" type="submit" value="LOGIN" id="login">
+  </div>
+</div>
+</form>
+</div>
+{% endblock %}

@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}Bucketlist | Create{% endblock %}
+{% block body %}
+  <div class="container">
+    <h1><center>BucketList Items</center></h1>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Activity</th>
+      <th>Target Date</th>
+      <th>Achieved?</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for k in data.items() %}
+    <tr>
+        <td>{{ 1 }}</td>
+        <td>{{ k[0]}}</td>
+        <td>{{ k[1]}}</td>
+        <td><input type="checkbox" name=""></td>
+        <td><a href="{{url_for('delete',id=k[0])}}" class="fa fa-trash-o">Delete</a></td>
+        <td><a href="{{url_for('edit',id=k[0])}}" class="fa fa-pencil">Edit</a></td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+</div>
+{% endblock %}

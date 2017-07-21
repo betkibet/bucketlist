@@ -1,0 +1,26 @@
+<html>
+ <head>
+   <title>Submitted form</title>
+   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="https://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+ </head>
+ <body>
+   <div class="container">
+     <div class="pagetitle">
+       <h1>Form submitted</h1>
+     </div>
+     <div id="main">
+       <p>Thanks for your submission, {{username}}!</p>
+       <p>Here's a review of the information that you sent:</p>
+       <p>
+          <strong>UserName</strong>: {{username}} <br>
+          <strong>Email</strong>: {{email}} <br>
+          <strong>Password</strong>: {{password}} <br>
+          <strong>Telephone</strong>: {{telephone}}<br>
+       </p>
+       <p><strong><a href="{{url_for('login')}}">Go to Login Page</strong></p>
+     </div>
+   </div>
+ </body>
+</html>
