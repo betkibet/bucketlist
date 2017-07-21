@@ -17,7 +17,6 @@
             <li role="presentation"><a href="/">Home</a></li>
             <li role="presentation"><a href="/about">About</a></li>
             {% if session['logged_in']==True %}
-            <li role="presentation"><a href="/view">View</a></li>
             <li role="presentation"><a href="/create">Create</a></li>
             {% endif %}
             {% if session['logged_in']!=True %}
