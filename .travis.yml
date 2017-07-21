@@ -11,5 +11,7 @@ before_install:
     - sudo apt-get install mercurial
 script:
     - nosetests tests/unittests.py
-    - coverage run --source=app tests/unittests.py test
+    - coverage run --source=tests/unittests.py run.py test
+after_success:
+  coveralls
     
