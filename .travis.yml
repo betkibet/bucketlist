@@ -8,6 +8,6 @@ before_install:
     - sudo apt-get build-dep python-pygame
     - sudo apt-get install mercurial
 script:
-    - nosetests tests/*.py
+    - nosetests tests/unittests.py
     - coverage run --source=app -m tests/unittests.py && coverage report
     - coveralls
