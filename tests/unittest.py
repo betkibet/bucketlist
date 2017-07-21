@@ -1,9 +1,8 @@
 import unittest
 import app
-from unittest import TestCase
 from app.tests import UserInfo, Account
 from app.views import create, view
-class BucketTest(TestCase):
+class BucketTest(unittest.TestCase):
     def setUp(self):
         self.bucket_info = ["index", "activity", "date"]
     def test_redirect_homepage(self):
