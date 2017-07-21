@@ -28,14 +28,6 @@ class BucketTest(unittest.TestCase):
     def test_create_bucket_info(self):
         '''' .....Test for Bucket Create .....'''
         self.assertNotEqual(self.bucket_info.index, None)
-    def test_create_bucket_if_not_authenticated(self):
-        '''' .....Test for Bucket Create When user is not logged in.....'''
-        self.user_info = False
-        self.assertEqual(self.user_info, Account(True)), "You must be logged in to create a bucket"
-    def test_user_authentication(self):
-        '''' .....Test for User Authentication.....'''
-        self.user_info = "user", "pass"
-        self.assertEqual(self.user_info, UserInfo("userx", "pass")), "Credentials are incorrect"
 
 def main():
     unittest.main()
