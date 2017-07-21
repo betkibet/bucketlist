@@ -62,7 +62,7 @@ def delete():
         data = json.load(account)
         keys = request.args.get('id')
         data.pop(keys, None)
-    return render_template('view.html', data=data)
+    return create()
 @app.route('/edit')
 def edit():
     with open('bucket_view.json', 'r') as account:
