@@ -9,3 +9,5 @@ before_install:
     - sudo apt-get install mercurial
 script:
     - nosetests tests/*.py
+    - coverage run --source=app -m tests/unittests.py && coverage report
+    - coveralls
