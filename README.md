@@ -26,6 +26,7 @@ To run the application: follow the following guidelines on installing the applic
 - Write a tests file that shall be run against with some dummy data to check for correctness of the application to be built
 - Run the tests against nosetest by running the nosetests testsfile command
 - [[Code Climate]] https://codeclimate.com/github/betkibet/bucketlist
+- [![Coverage Status](https://coveralls.io/repos/github/betkibet/bucketlist/badge.svg?branch=master)](https://coveralls.io/github/betkibet/bucketlist?branch=master)
 # Deployment
 - Create a heroku account
 - Once the tests have been ascertained to be okay, create an origin file by running the git remote add origin github_url command
