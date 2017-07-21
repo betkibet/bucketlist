@@ -21,7 +21,7 @@ def save_bucketlist():
     data = {(request.form['activity']):request.form['date']}
     with open('bucket_view.json', 'w') as account:
         json.dump(data, account)
-    return create()
+    return render_template('view.html', data=data)
 @app.route('/view')
 def view():
     with open('bucket_view.json', 'r') as account:
