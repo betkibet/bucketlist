@@ -34,7 +34,7 @@ rsa==3.4.2
 six==1.10.0
 stevedore==1.24.0
 stormpath==2.4.4
-urllib3==1.21.1
+urllib3==1.26.5
 virtualenv==15.1.0
 virtualenv-clone==0.2.6
 virtualenvwrapper==4.7.2
